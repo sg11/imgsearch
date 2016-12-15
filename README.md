@@ -1,7 +1,8 @@
 #Image Search Abstraction Layer Microservice API 
 Created by sg11
 
-###Image Search is a microservice API that accepts a query term and page offset and returns a set of images with URLs to the thumbnails and pages as well as a brief description about the image. You can also search for the latest queries and the app will return the 10 latest queries. This app is a project for the Back End Certification on FreeCodeCamp.
+##Image Search is a microservice API that accepts a query term and page offset and returns a set of images with URLs to the thumbnails and pages as well as a brief description about the image. You can also search for the latest queries and the app will return the 10 latest queries. 
+##This app is a project for the Back End Certification on FreeCodeCamp.
 
 ##User Stories:
  1. I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
