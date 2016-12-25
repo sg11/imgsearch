@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+body {
+  background-color: #FCFAEE;
+  margin: 0px 0px 0px 0px;
+}
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+form {
+  margin-bottom: 10px;
+}
+#header {
+  background-color: #0D5C79;
+  padding-top: 50px;
+  height: 350px;
+  width: 100%;
+  color: white;
+}
+#query {
+  width: 400px;
+}
+.btn-header {
+  background-color: #EFA30D;
+  color: white;
+  border: none;
+}
+.btn-header:hover {
+  background-color: #EFA30D;
+}
+.btn-header:focus {
+  color: white;
+}
+.alt {
+  margin-right: 10px;
+}
+#results {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+.thumbnail {
+  width: 200px;
+  height: 215px;
+  margin: 10px 10px 25px 10px;
+  float: left;
+  background-color: #FCFAEE;
+  border-radius: 10px;
+}
+.caption {
+  display: inline-block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 190px;
+  height: 70px;
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+img {
+  max-height: 140px;
+}
+.btn-nav {
+  background-color: #0D5C79;
+  color: white;
+}
+.btn-nav:focus {
+  color: white;
+}
+.invisible {
+  visibility: hidden;
+}
+.latest {
+  box-shadow: 5px 5px 5px #888888;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.latest:hover {
+  border-left: solid 5px #0D5C79;
+  cursor: pointer;
+}

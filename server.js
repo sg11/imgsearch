@@ -9,6 +9,13 @@ mongo.connect("mongodb://localhost:27017/queries", function(err,db){
     search(app,db);
 });
 
+app.use(express.static(__dirname + '/public'));
+app.set('views', './public');
+
+app.get('/', function(req,res){
+   res.render('index');
+});
+
 app.listen(8080, function(){
     console.log('App listening on port 8080');
 });

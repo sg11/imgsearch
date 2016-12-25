@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/imgSearch.js"></script>
+    
+    <div class="text-center" id="header">
+      <h1 class="text-uppercase"><i class="fa fa-camera-retro fa-2x"></i></h1>
+      <form class="form-inline text-center" id="form">
+          <input type="text" class="form-control url" id="query" placeholder="Search for Images">
+        <button type="submit" class="btn btn-header" id="submitBtn"><i class="fa fa-search"></i></button>
+      </form>
+      <button type="button" class="btn btn-header alt" id="latest" onclick=surpriseMe()><i class="fa fa-gift"></i>&nbsp;&nbsp;Surprise Me</button>
+      <button type="button" class="btn btn-header alt" id="latest" onclick=showLatest()><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Show Recent</button>
+    </div>
+    <div class="text-center row" id="results">
+    </div>
+    <div id="buttons" class="text-center">
+      <button type="button" class="btn btn-nav invisible" id="prev" onclick=goPrev()>Previous</button>
+      <button type="button" class="btn btn-nav invisible" id="next" onclick=goNext()>Next</button> 
+    </div>
+</body>
+
+</html>
