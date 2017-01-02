@@ -31,7 +31,7 @@ function searchImages(num,query){
       if (i == 5 || i == 9 || i == 13){
         $("#results").append("</div><div class='row'>");
       }
-      $("#results").append("<a href='" + item["page-url"] + "' class='col-md-3'><div class='thumbnail col-md-4'><img src='" + item["thumbnail-url"] + "' class='img-responsive center-block'><div class='caption'>" + snippet + "</div></div></a>");
+      $("#results").append("<a href='" + item["page-url"] + "' class='col-xs-6 col-sm-4 col-md-3'><div class='thumbnail'><img src='" + item["thumbnail-url"] + "' class='img-responsive center-block'><div class='caption'>" + snippet + "</div></div></a>");
     });
     $("#results").append("</div>");
   });
