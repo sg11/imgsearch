@@ -12,16 +12,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/js/imgSearch.js"></script>
     
-    <div class="text-center" id="header">
+    <div class="text-center container-fluid" id="header">
       <h1 class="text-uppercase"><i class="fa fa-camera-retro fa-2x"></i></h1>
       <form class="form-inline text-center" id="form">
+        <div class="row">
+          <div class="col-xs-9 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-offset-4 col-md-4">
           <input type="text" class="form-control url" id="query" placeholder="Search for Images">
-        <button type="submit" class="btn btn-header" id="submitBtn"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="col-xs-1 text-left">
+          <button type="submit" class="btn btn-header" id="submitBtn"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
       </form>
-      <button type="button" class="btn btn-header alt" id="latest" onclick=surpriseMe()><i class="fa fa-gift"></i>&nbsp;&nbsp;Surprise Me</button>
-      <button type="button" class="btn btn-header alt" id="latest" onclick=showLatest()><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Show Recent</button>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2 text-right">
+          <button type="button" class="btn btn-header alt" id="latest" onclick=surpriseMe()><i class="fa fa-gift"></i>&nbsp;&nbsp;Surprise Me</button>
+        </div>
+        <div class="col-xs-4 text-left">
+          <button type="button" class="btn btn-header alt" id="latest" onclick=showLatest()><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Show Recent</button>
+        </div>
+      </div>
     </div>
-    <div class="text-center row" id="results">
+    <div class="text-center continer-fluid">
+      <div class="row" id="results">
+      </div>
     </div>
     <div id="buttons" class="text-center">
       <button type="button" class="btn btn-nav invisible" id="prev" onclick=goPrev()>Previous</button>

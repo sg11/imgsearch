@@ -28,9 +28,9 @@ function searchImages(num,query){
         var snippet = item["snippet"];
       }
       i += 1;
-      if (i == 5 || i == 9 || i == 13){
-        $("#results").append("</div><div class='row'>");
-      }
+      // if (i == 5 || i == 9 || i == 13){
+      //   $("#results").append("</div><div class='row'>");
+      // }
       $("#results").append("<a href='" + item["page-url"] + "' class='col-xs-6 col-sm-4 col-md-3'><div class='thumbnail'><img src='" + item["thumbnail-url"] + "' class='img-responsive center-block'><div class='caption'>" + snippet + "</div></div></a>");
     });
     $("#results").append("</div>");
